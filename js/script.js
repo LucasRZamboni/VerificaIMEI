@@ -37,6 +37,7 @@ function consultarIMEI() {
                   <span>Servidores encontrados:</span><br>
                   ${existingServers.join("<br>")}
               `;
+              document.getElementById("result").classList.add('success');
       } else {
         // Caso contrário, exibe mensagem de nenhum servidor encontrado
         document.getElementById("result").textContent =

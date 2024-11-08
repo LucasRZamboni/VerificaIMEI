@@ -99,3 +99,7 @@ span{
 #close:hover{
     background-color: rgb(219, 16, 16);
 }
+.success{
+    border: 2px solid rgb(9, 29, 208);
+    box-shadow: 0 0 25px rgba(34, 65, 138, 0.608);
+}
