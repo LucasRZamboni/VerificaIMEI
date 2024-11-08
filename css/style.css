@@ -43,6 +43,11 @@ body {
     border-radius: 10px;
     background-color: hsla(217, 88%, 52%, 0.43);
     font-size: 15px;
+    cursor: pointer;
+    transition: background-color .1s;
+}
+.pesquisa button:hover{
+    background-color: hsla(217, 63%, 33%, 0.43);
 }
 .resultado{
     display: flex;
@@ -50,13 +55,15 @@ body {
     justify-content: center;
 }
 #result {
-  margin-top: 20px;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ddd;
   background-color: #f4f4f4;
-  white-space: pre-wrap; /* Para formatar o JSON */
   max-height: 200px;
   overflow-y: auto;
-  width: 70%;
+  width: 50%;
+  border-radius: 10px;
 }
 
+span{
+    color: blue;
+}
