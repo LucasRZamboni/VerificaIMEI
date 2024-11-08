@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --font1: "Poppins", serif;
+    --font2: "Roboto", serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font2);
+}
+body {
+ width: 100%;
+ min-height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.pesquisa{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40%;
+    gap: 20px;
+}
+.pesquisa input{
+    padding: 15px;
+    width: 40%;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.pesquisa button{
+    padding: 20px;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: hsla(217, 88%, 52%, 0.43);
+    font-size: 15px;
+}
+.resultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  white-space: pre-wrap; /* Para formatar o JSON */
+  max-height: 200px;
+  overflow-y: auto;
+  width: 70%;
+}
+
