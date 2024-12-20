@@ -41,7 +41,6 @@ body {
     width: 20%;
     border: none;
     border-radius: 10px;
-    background-color: hsla(217, 88%, 52%, 0.43);
     font-size: 15px;
     cursor: pointer;
     transition: background-color .1s;
@@ -62,10 +61,14 @@ body {
   overflow-y: auto;
   width: 50%;
   border-radius: 10px;
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
 }
 
-span{
+.title-result{
     color: blue;
+    margin-bottom: 5px;
 }
 .erro{
     display: none;
@@ -102,4 +105,33 @@ span{
 .success{
     border: 2px solid rgb(9, 29, 208);
     box-shadow: 0 0 25px rgba(34, 65, 138, 0.608);
+}
+.buttons{
+    width: 40%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+.buttons button{
+    width: 150px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    background: rgb(2, 104, 2);
+    color: white;
+}
+.buttons button ion-icon{
+    font-size: 24px;
+    color: rgb(40, 247, 40);
+    font-weight: 800;
+}
+.buttons .limpa{
+    background: rgb(146, 5, 5);
+    color: white;
+}
+.buttons .limpa ion-icon{
+    color: rgb(248, 38, 38);
 }
