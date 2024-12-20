@@ -18,6 +18,11 @@ body {
 .container{
     width: 100%;
     height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    color: rgb(254, 254, 254);
+    font-size: 40px;
 }
 .pesquisa{
     width: 100%;
@@ -56,10 +61,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 #result {
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   background-color: #f4f4f4;
   max-height: 200px;
   overflow-y: auto;
@@ -68,6 +74,7 @@ body {
   font-size: 21px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 25px rgb(255, 255, 255);
 }
 
 .title-result{
@@ -79,9 +86,9 @@ body {
     align-items: center;
     width: 50%;
     padding: 10px;
-    background-color: rgba(243, 76, 76, 0.662);
+    background-color: rgba(179, 13, 13, 0.662);
     border-radius: 10px;
-    color: rgb(198, 0, 0);
+    color: rgb(233, 3, 3);
     padding-left: 20px;
     font-family: var(--font1);
     position: relative;
