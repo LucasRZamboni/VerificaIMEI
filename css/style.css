@@ -17,25 +17,34 @@ body {
 }
 .container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(0, 0, 0);
-}
-h1{
-    color: rgb(254, 254, 254);
-    font-size: 40px;
-}
-.pesquisa{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 40%;
+}
+h1{
+    color: rgb(254, 254, 254);
+    font-size: 40px;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+.pesquisa{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
     gap: 20px;
+    padding: 30px 0;
+    margin-bottom: 10px;
 }
 .pesquisa input{
     padding: 15px;
-    width: 40%;
+    width: 90%;
+    max-width: 500px;
     outline: none;
     border: 1px solid grey;
     border-radius: 10px;
@@ -43,25 +52,18 @@ h1{
 }
 .pesquisa button{
     padding: 20px;
-    width: 20%;
+    width: 120px;
     border: none;
     border-radius: 10px;
     font-size: 15px;
     cursor: pointer;
-    transition: background-color .1s;
-}
-.pesquisa button:hover{
-    background-color: rgb(22, 201, 22);
-    color: green;
-}
-.pesquisa button:hover ion-icon{
-    color: green;
+    transition: all .2s ease-in-out;
 }
 .resultado{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    width: 100%;
 }
 #result {
   padding: 15px;
@@ -69,12 +71,13 @@ h1{
   background-color: #f4f4f4;
   max-height: 200px;
   overflow-y: auto;
-  width: 50%;
+  width: 90%;
+  max-width: 500px;
   border-radius: 10px;
   font-size: 21px;
-  display: flex;
+  display:  none;
   flex-direction: column;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 .title-result{
@@ -84,7 +87,8 @@ h1{
 .erro{
     display: none;
     align-items: center;
-    width: 50%;
+    width: 90%;
+    max-width: 400px;
     padding: 10px;
     background-color: rgba(179, 13, 13, 0.662);
     border-radius: 10px;
@@ -108,17 +112,17 @@ h1{
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: rgb(169, 25, 25);
+    background-color: rgb(219, 16, 16);
 }
 #close:hover{
-    background-color: rgb(219, 16, 16);
+    background-color: rgb(169, 25, 25);
 }
 .success{
     border: 2px solid rgb(9, 29, 208);
     box-shadow: 0 0 25px rgba(34, 65, 138, 0.608);
 }
 .buttons{
-    width: 40%;
+    width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -140,6 +144,20 @@ h1{
     font-size: 24px;
     color: rgb(40, 247, 40);
     font-weight: 800;
+}
+.buttons .consulta{
+    background: rgb(5, 146, 12);
+    color: white;
+}
+.buttons .consulta ion-icon{
+    color: rgb(73, 248, 38);
+}
+.pesquisa .consulta:hover{
+    background-color: rgb(32, 249, 21);
+    color: rgb(5, 146, 28);
+}
+.pesquisa .consulta:hover ion-icon{
+    color: rgb(5, 146, 14);
 }
 .buttons .limpa{
     background: rgb(146, 5, 5);

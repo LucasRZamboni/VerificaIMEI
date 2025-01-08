@@ -33,6 +33,7 @@ function consultarIMEI() {
 
       if (existingServers && existingServers.length > 0) {
         // Se existir pelo menos um servidor, exibe os servidores
+        document.getElementById("result").style.display="flex";
         document.getElementById("result").innerHTML = `
                   <span class="title-result">Servidores encontrados:</span><br>
                   ${existingServers.join("<br>")}

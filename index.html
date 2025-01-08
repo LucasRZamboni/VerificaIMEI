@@ -8,14 +8,18 @@
   </head>
   <body>
     <div class="container">
+      <h1>Consulta IMEI</h1>
       <div class="pesquisa">
-        <h1>Consulta IMEI</h1>
         <input type="text" id="imei" placeholder="Digite o número IMEI" />
         <div class="buttons">
-          <button onclick="consultarIMEI()"><span><ion-icon name="search-outline"></ion-icon></span>Consultar</button>
-          <button class="limpa" onclick="window.location.reload();"><span><ion-icon name="trash-outline"></ion-icon></span>Limpar</button>
+          <button onclick="consultarIMEI()" class="consulta">
+            <span><ion-icon name="search-outline"></ion-icon></span>Consultar
+          </button>
+          <button class="limpa" onclick="window.location.reload();">
+            <span><ion-icon name="trash-outline"></ion-icon></span>Limpar
+          </button>
         </div>
-        
+
         <div id="error" class="erro"></div>
       </div>
       <div class="resultado">
