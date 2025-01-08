@@ -10,6 +10,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font2);
+    transition: all .2s ease-in-out;
 }
 body {
  width: 100%;
@@ -30,6 +31,28 @@ h1{
     padding: 25px;
     margin-bottom: 10px;
 }
+.tema
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    background: white;
+    cursor: pointer;
+}
+.tema:hover{
+    box-shadow: 0 0 20px grey;
+}
+
 .pesquisa{
     width: 90%;
     display: flex;
@@ -172,4 +195,32 @@ h1{
 }
 .pesquisa .limpa:hover ion-icon{
     color: rgb(146, 5, 5);
+}
+
+
+#containerPrincipal.temaBranco{
+    background-color: #ffffff;
+}
+#titulo.temaBranco{
+    color: black;
+}
+#imei.temaBranco{
+    background: rgb(0, 0, 0);
+    color: white;
+}
+#trocaTema.temaBranco{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+#trocaTema.temaBranco:hover{
+    box-shadow: 0 0 20px grey;
+}
+
+
+#result.temaBranco{
+    background: black;
+    color: white;
+}
+#result.temaBranco .title-result{
+    color: rgb(103, 103, 247);
 }

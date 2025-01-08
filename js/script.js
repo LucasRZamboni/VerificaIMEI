@@ -49,3 +49,53 @@ function consultarIMEI() {
       document.getElementById("result").textContent = `Erro: ${error.message}`;
     });
 }
+
+const icone = document.getElementById("iconeTema");
+
+document.getElementById("trocaTema").addEventListener("click", function() {
+  
+  if (icone.name === "sunny-outline") {
+    icone.name = "moon-outline";
+  } else {
+    icone.name = "sunny-outline";
+  }
+
+  if(!document.getElementById("trocaTema").classList.contains("temaBranco")){
+    document.getElementById("trocaTema").classList.add("temaBranco");
+  }
+  else{
+    document.getElementById("trocaTema").classList.remove("temaBranco");
+  }
+
+const container = document.getElementById("containerPrincipal");
+  if(!container.classList.contains("temaBranco")){
+    container.classList.add("temaBranco");
+  }
+  else{
+    container.classList.remove("temaBranco");
+  }
+
+  const titulo = document.getElementById("titulo");
+  if(!titulo.classList.contains("temaBranco")){
+    titulo.classList.add("temaBranco");
+  }
+  else{
+    titulo.classList.remove("temaBranco");
+  }
+
+  const imei = document.getElementById("imei");
+  if(!imei.classList.contains("temaBranco")){
+    imei.classList.add("temaBranco");
+  }
+  else{
+    imei.classList.remove("temaBranco");
+  }
+
+  const result = document.getElementById("result");
+  if(!result.classList.contains("temaBranco")){
+    result.classList.add("temaBranco");
+  }
+  else{
+    result.classList.remove("temaBranco");
+  }
+});
